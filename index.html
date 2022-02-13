@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-BR">
 <head>
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -11,23 +11,84 @@
   <div class="container">
     <div class="box">
       <form>
-        <h2>Simulador de Financiamento</h2>
+        <h2>Simulação de Financiamento</h2>
         <fieldset>
           <legend>Dados do financiamento</legend>
 
           <label>
-            Valor: <input id="valor"  name="valor" type="number"  />
+            Valor: 
+            <input id="valor"  name="valor" type="number" />
           </label>
 
           <label>
-            Prazo (anos):<input id="prazo" name="prazo" type="number">
+            Prazo (anos):
+            <input id="prazo" name="prazo" type="number">
           </label>
 
           <label>
-            Juros ao ano:<input id="juros" name="juros" type="number">
+            Juros ao ano:
+            <input id="taxaAnual" name="taxaAnual" type="number">
           </label>
           <br>
-          <button>Simular</button>
+          <button onclick="simular()" type="button">Simular</button>
+        </fieldset>
+
+          <fieldset>
+            <legend>Resultado</legend>
+          <label>
+            Prazo(meses): <input id="prazo_mes"  name="prazo_mes" type="number" readonly />
+          </label>
+
+          <label>
+            Juros (a.m):<input id="juros_mes" name="juros_mes" type="number" readonly />
+          </label>
+
+          <label>
+            Juros acomulados:<input id="juros_total" name="juros_total" type="number" readonly />
+          </label>
+
+          <table>
+            <thead>
+              <tr>
+                <th>Prestação</th>
+                <th>Amortização</th>
+                <th>Juros</th>
+                <th>Valor total</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td>1</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>2</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>3</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>4</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td></td>
+                <td></td>
+                <td></td>
+              </tr>
+            </tbody>
+          </table>
         </fieldset>
       </form>
   </div>
